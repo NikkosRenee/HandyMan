@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikkos Arredondo - Professional Handyman Services | Southern California</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <i class="fas fa-tools text-blue-600 text-2xl mr-2"></i>
+                            <span class="font-semibold text-gray-900 text-lg">Nikkos Arredondo</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#services" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                    <a href="#about" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="#testimonials" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Testimonials</a>
+                    <a href="#contact" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-blue-600 hover:text-white transition duration-300">Services</a></li>
+                <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-blue-600 hover:text-white transition duration-300">About</a></li>
+                <li><a href="#testimonials" class="block text-sm px-2 py-4 hover:bg-blue-600 hover:text-white transition duration-300">Testimonials</a></li>
+                <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-blue-600 hover:text-white transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Quality Handyman Services</h1>
+            <p class="text-xl md:text-2xl mb-8">Reliable, professional, and affordable home repairs in Southern California</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:714-440-0287" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i> Call Now
+                </a>
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i> Get a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive home repair and maintenance solutions tailored to your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-home text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Home Repairs</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">From leaky faucets to squeaky doors, we handle all types of home repairs to keep your living space comfortable and functional.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Drywall repair</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Door/window adjustments</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Cabinet installation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-bath text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Plumbing</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Basic plumbing services to address common household issues without the need for a full-time plumber.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Faucet repair/replacement</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Toilet repairs</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Pipe leak fixes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-bolt text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Electrical</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Safe and reliable electrical work for common household electrical needs.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Light fixture installation</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Outlet/switch replacement</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Ceiling fan installation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-paint-roller text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Painting</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Interior and exterior painting services to refresh your home's appearance.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Wall painting</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Trim work</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Deck staining</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-tree text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Outdoor Services</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Enhance your outdoor living space with our comprehensive exterior services.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Fence repair</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Deck maintenance</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Pressure washing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-tasks text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Assembly & Installation</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Professional assembly and installation of furniture and appliances.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Furniture assembly</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> TV mounting</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Appliance installation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">About Nikkos Arredondo</h2>
+                    <p class="text-gray-600 mb-4">With over 15 years of experience in home repairs and maintenance, Nikkos Arredondo has built a reputation for quality workmanship and exceptional customer service in Southern California.</p>
+                    <p class="text-gray-600 mb-4">What sets Nikkos apart is his attention to detail, honest pricing, and commitment to treating every home as if it were his own. He takes pride in solving problems efficiently and leaving customers completely satisfied.</p>
+                    <p class="text-gray-600 mb-6">When you hire Nikkos, you're not just getting a handyman - you're getting a trusted professional who values integrity and quality above all else.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                            <i class="fas fa-award text-blue-500 mr-2"></i>
+                            <span class="font-medium">Licensed & Insured</span>
+                        </div>
+                        <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                            <i class="fas fa-star text-blue-500 mr-2"></i>
+                            <span class="font-medium">5-Star Service</span>
+                        </div>
+                        <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                            <i class="fas fa-clock text-blue-500 mr-2"></i>
+                            <span class="font-medium">On-Time Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nikkos Arredondo working" class="w-full h-auto rounded-lg mb-4">
+                        <div class="flex items-center justify-center space-x-4">
+                            <a href="tel:714-440-0287" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
+                                <i class="fas fa-phone mr-2"></i> Call Now
+                            </a>
+                            <a href="mailto:nikkosarredondo@yahoo.com" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
+                                <i class="fas fa-envelope mr-2"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Don't just take our word for it - hear from satisfied customers across Southern California</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Sarah J.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Nikkos fixed several issues in our home that had been bothering us for months. He was punctual, professional, and his work was impeccable. Will definitely call him again for any future projects!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Michael T.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I've used many handymen over the years, but Nikkos stands out. He's honest about what needs to be done and what doesn't, and his prices are fair. My go-to handyman from now on."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Lisa & Robert K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Nikkos assembled our entire nursery furniture and mounted TVs in multiple rooms. He was careful with our belongings and left everything spotless. Highly recommend his services!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+                    <p class="text-gray-600 mb-6">Ready to tackle your home repair projects? Contact Nikkos today for a free estimate or to schedule service.</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-phone text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Phone</p>
+                                    <a href="tel:714-440-0287" class="font-medium text-gray-900 hover:text-blue-600">714-440-0287</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Email</p>
+                                    <a href="mailto:nikkosarredondo@yahoo.com" class="font-medium text-gray-900 hover:text-blue-600">nikkosarredondo@yahoo.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Service Area</p>
+                                    <p class="font-medium text-gray-900">Southern California</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Business Hours</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Monday - Friday</span>
+                                <span class="font-medium text-gray-900">8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="font-medium text-gray-900">9:00 AM - 3:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Sunday</span>
+                                <span class="font-medium text-gray-900">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Request a Free Estimate</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Phone</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-700 mb-2">Service Needed</label>
+                                <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="">Select a service</option>
+                                    <option value="Home Repairs">Home Repairs</option>
+                                    <option value="Plumbing">Plumbing</option>
+                                    <option value="Electrical">Electrical</option>
+                                    <option value="Painting">Painting</option>
+                                    <option value="Outdoor Services">Outdoor Services</option>
+                                    <option value="Assembly & Installation">Assembly & Installation</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                Send Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-tools text-blue-400 text-2xl mr-2"></i>
+                        <span class="font-semibold text-xl">Nikkos Arredondo</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">Quality handyman services in Southern California</p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Home Repairs</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Plumbing</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Electrical</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                            <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Nikkos Arredondo. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="tel:714-440-0287" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="mailto:nikkosarredondo@yahoo.com" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button (Mobile) -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <a href="tel:714-440-0287" class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center transition duration-300">
+            <i class="fas fa-phone text-xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to a server
+            // For this example, we'll just show an alert
+            alert(`Thank you, ${name}! Your request for ${service || 'handyman services'} has been received. Nikkos will contact you shortly at ${phone} or ${email}.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=NikkosRenee/handyman-services" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
